@@ -1,8 +1,8 @@
 const txtemail = document.getElementById("txtemail");
 const txtpassword = document.getElementById("txtpassword");
-const btnLogin = document.getElementById("submitButton");
-const btnSignUp = document.getElementById("email");
-const btnLogout = document.getElementById("email");
+const btnLogin = document.getElementById("btnLogin");
+const btnSignUp = document.getElementById("btnSignUp");
+const btnLogout = document.getElementById("btnLogout");
 
 
 

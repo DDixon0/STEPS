@@ -18,12 +18,12 @@ label,
    font-family: 'Lobster', cursive;
 }
 h1 {
-   font-size: 45px;
+   font-size: 30px;
    text-align: center;
 }
 
 .userContainer {
-   background-color: 99D3DF;
+   background-color: #99D3DF;
 }
 
 label {
@@ -31,7 +31,7 @@ label {
 }
 
 input {
-   font-size: 50px;
+   font-size: 30px;
 
 }
 .userContainer {
@@ -46,15 +46,21 @@ form,
 }
 
 #submitButton {
-   background-color:#f442e5;
-   font-size: 100px;
+   background-color:#88BBD6;
+   font-size: 50px;
 
 }
 
 #submitButton:hover {
-   background-color: #f44141;
+   background-color: #89E9E9;
 }
 
 #submitButton1{
-   color: red;
+   color:#CDCDCD;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 75%;
+    }
 }

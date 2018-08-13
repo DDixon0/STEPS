@@ -1,8 +1,8 @@
-const email = document.getElementById("txtemail");
-const email = document.getElementById("txtpassword");
-const email = document.getElementById("submitButton");
-// const email = document.getElementById("email");
-// const email = document.getElementById("email");
+const txtemail = document.getElementById("txtemail");
+const txtpassword = document.getElementById("txtpassword");
+const btnLogin = document.getElementById("submitButton");
+const btnSignUp = document.getElementById("email");
+const btnLogout = document.getElementById("email");
 
 
 
@@ -20,3 +20,32 @@ submitButton.addEventListener("click", e => {
 	 noLogin.catch(e => console.log(e.message));
 
 });
+
+
+SignUpBtn.addEventListener("click", e => {
+	const email = txtemail.value;
+	const pass = txtpassword.value;
+	const auth = firebase.auth();
+	const promise = auth.createUserWithEmailAndPassword(email, pass);
+	promise.catch(e => console.log(e.message));
+
+});
+
+btnLogout.addEventListener("click", e => {
+	firebase.auth().signOut();
+});
+
+firebase.auth().onAuthStateChanged(firebaseUser => {
+	if(firebaseUser){
+		console.log(firebase);
+		btnLogout.classList.remove("hide");
+	} else {
+		console.log("Please login or Sign up");
+		btnLogout.classList.add("hide");
+	}
+
+
+
+
+
+}

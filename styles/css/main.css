@@ -1,7 +1,3 @@
-p{
-   margin: 0;
-}
-
 body {
    display: flex;
    flex-direction: column;
@@ -34,20 +30,19 @@ input {
    font-size: 30px;
 
 }
-.userContainer {
+ .userContainer {
    padding: var(--addedPadding);
-}
-form,
-.inputContainer,
+ }  
+ form,
 .singleInput {
    display: flex;
    flex-direction: column;
 
-}
+} 
 
 #submitButton {
    background-color:#88BBD6;
-   font-size: 50px;
+   font-size: 30px;
 
 }
 
@@ -59,8 +54,3 @@ form,
    color:#CDCDCD;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        width: 75%;
-    }
-}

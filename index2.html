@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>STEPS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="main2.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200i" rel="stylesheet">
+  <script src="main2.js" defer></script>
+
 </head>
 <body>
+  <div class="userContainer">
+      <form>
+              <div class="singleInput">
+                  <h1>Sign Up</h1>
+                  <label id="name">Full Name:</label>
+                  <input id="txtfullname" type="text">
+                  <label for="username">Email:</label>
+                  <input id="txtemail" type="text">
+                  <label for="message">Password:</label>
+                  <input id="txtpassword" type="text">
+              </div>
+      </form>
+      <br>
+      <form>
 
+  <input id="mentor" type="radio" name="role" value="mentor" required> Mentor<br>
+  <input id="mentee" type="radio" name="role" value="mentee"> Mentee<br>
+</form>
+      <button id="submitButton">Create Account</button>
+  </div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+	    authDomain: "steps-fe8a4.firebaseapp.com",
+	    databaseURL: "https://steps-fe8a4.firebaseio.com",
+	    projectId: "steps-fe8a4",
+	    storageBucket: "steps-fe8a4.appspot.com",
+	    messagingSenderId: "198116484586"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 </body>
 </html>

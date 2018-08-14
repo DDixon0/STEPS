@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    animation: phase 10s infinite;
+ }
+ 
+ 
+ 
+ 
+ #headerContent{
+     display: flex;
+     justify-content: center;
+     padding-bottom: 10px;
+     
+ }
+ 
+  .userContainer {
+     background-color: rgba(255, 255, 255, 0.473);
+     padding: 15px;
+     border-radius: 25px;
+ } 
+ 
+ label{
+    font-size: 25px;
+ }
+ 
+ input {
+    font-size: 50px;
+ }
+ 
+ .inputContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+ } 
+ 
+ #submitButton {
+    text-align: center;
+    margin-top: 10px;
+    background-color:#EDFEFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; 
+    
+ }
+ 
+ #submitButton:hover {
+    background-color: #CDCDCD;
+ }
+ 
+ 
+ 
+ @keyframes phase{
+ 100%{background-color: #88BBD6}
+ 75%{background-color: #99D3DF}
+ 50%{background-color: #89E9E9}
+ 25%{background-color: #99D3DF}
+ 0%{background-color: #88BBD6}
+ }
+
+ 

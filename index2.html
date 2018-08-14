@@ -7,7 +7,7 @@
   <title></title>
   <link rel="stylesheet" href="styles/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200i" rel="stylesheet">
-  <script src="styles/js/main2.js" defer></script>
+  <script src="main2.js" defer></script>
 
 </head>
 <body>
@@ -20,14 +20,14 @@
                   <label for="username">Email:</label>
                   <input id="txtemail" type="text">
                   <label for="message">Password:</label>
-                  <input id="txtpassword " type="text">
+                  <input id="txtpassword" type="text">
               </div>
       </form>
       <br>
       <form>
 
-  <input type="radio" name="role" value="Mentor"> Mentor<br>
-  <input type="radio" name="role" value="Mentor"> Mentee<br>
+  <input id="mentor" type="radio" name="role" value="mentor" required> Mentor<br>
+  <input id="mentee" type="radio" name="role" value="mentee"> Mentee<br>
 </form>
       <button id="submitButton">Create Account</button>
   </div>

@@ -25,6 +25,9 @@ body {
  
  label{
     font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+
  }
  
  input {

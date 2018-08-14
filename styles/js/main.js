@@ -1,8 +1,6 @@
 
 
 const btnLogin = document.getElementById("btnLogin");
-const btnSignUp = document.getElementById("btnSignUp");
-const btnLogout = document.getElementById("btnLogout");
 
 function getCredentials() {
 	const txtemail = document.getElementById("txtemail");
@@ -19,6 +17,7 @@ function getCredentials() {
 	}
 
 }
+
 btnLogin.addEventListener("click", e => {
 	e.preventDefault();
 	
@@ -37,125 +36,41 @@ btnLogin.addEventListener("click", e => {
 	});
 });
 
-btnSignUp.addEventListener("click", e => {
-
-	e.preventDefault();
-
-	const credentials = getCredentials()
-	const email = credentials.email;
-	const password = credentials.password;
-	
-	firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
-		console.log('success');
-	}).catch(function(error) {
-	  // Handle Errors here.
-	  var errorCode = error.code;
-	  var errorMessage = error.message;
-	  console.log(errorMessage);
-	  // ...
-	});
-});
-
-
-
-btnLogout.addEventListener("click", e => {
-	e.preventDefault();
-	firebase.auth().signOut().then(function() {
-	  // Sign-out successful.
-	  console.log('success');
-	}).catch(function(error) {
-	  // An error happened.
-	  console.log(error);
-	});
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const auth = firebase.auth();
-// auth.signInWithEmailAndPassword(email, pass);
-// auth.createUserWithEmailAndPassword(email, pass);
-// auth.onAuthStateChanged(firebaseUser => { }); 
-
-
-
-
+// const btnSignUp = document.getElementById("btnSignUp");
+// const btnLogout = document.getElementById("btnLogout");
 
 // btnSignUp.addEventListener("click", e => {
-// 	const email = txtemail.value;
-// 	const pass = txtpassword.value;
-// 	const auth = firebase.auth();
-// 	const promise = auth.createUserWithEmailAndPassword(email, pass);
-// 	promise.catch(e => console.log(e.message));
 
+// 	e.preventDefault();
+
+// 	const credentials = getCredentials()
+// 	const email = credentials.email;
+// 	const password = credentials.password;
+	
+// 	firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
+// 		console.log('success');
+// 	}).catch(function(error) {
+// 	  // Handle Errors here.
+// 	  var errorCode = error.code;
+// 	  var errorMessage = error.message;
+// 	  console.log(errorMessage);
+// 	  // ...
+// 	});
 // });
+
+
 
 // btnLogout.addEventListener("click", e => {
-// 	firebase.auth().signOut();
+// 	e.preventDefault();
+// 	firebase.auth().signOut().then(function() {
+// 	  // Sign-out successful.
+// 	  console.log('success');
+// 	}).catch(function(error) {
+// 	  // An error happened.
+// 	  console.log(error);
+// 	});
+
 // });
-
-// firebase.auth().onAuthStateChanged(firebaseUser => {
-// 	if(firebaseUser){
-// 		console.log(firebase);
-// 		btnLogout.classList.remove("hide");
-// 	} else {
-// 		console.log("Please login or Sign up");
-// 		btnLogout.classList.add("hide");
-// 	}
-
-
-
-
-
-// }
-
-function login(){
-
-	var userEmail = document.getElementById("txtemail").value;
-	var userPass = document.getElementById("txtpassword").value;
-
-
-
-
-
-
-}
-
-
-
-
-
 
 
 

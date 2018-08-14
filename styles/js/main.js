@@ -1,6 +1,6 @@
 
 
-const btnLogin = document.getElementById("btnLogin");
+const btnLogin = document.getElementById("submitButton");
 
 function getCredentials() {
 	const txtemail = document.getElementById("txtemail");

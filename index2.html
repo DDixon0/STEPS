@@ -7,6 +7,7 @@
   <title></title>
   <link rel="stylesheet" href="styles/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200i" rel="stylesheet">
+  <script src="styles/js/main2.js" defer></script>
 
 </head>
 <body>
@@ -25,5 +26,19 @@
       <h2>Mentor or Mentee</h2>
       <button id="submitButton">Create Account</button>
   </div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+	    authDomain: "steps-fe8a4.firebaseapp.com",
+	    databaseURL: "https://steps-fe8a4.firebaseio.com",
+	    projectId: "steps-fe8a4",
+	    storageBucket: "steps-fe8a4.appspot.com",
+	    messagingSenderId: "198116484586"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 </body>
 </html>

@@ -2,27 +2,27 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 80vh;
    justify-content: center;
-   background-image:url();
-   background-size: cover;
+   height: 50%;
+   animation: phase 10s infinite;
 }
 
 
 
-h1 {
-   font-size: 30px;
-   text-align: center;
+
+#headerContent{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 .userContainer {
-    background: #89E9E9;
+    background-color: rgba(255, 255, 255, 0.473);
     padding: 15px;
     border-radius: 25px;
- 
 }
 
-label {
+label{
    font-size: 25px;
 
 }
@@ -31,7 +31,7 @@ input {
    font-size: 30px;
 }
 
-.singleInput {
+.inputContainer{
    display: flex;
    flex-direction: column;
    font-family: 'Nunito Sans', sans-serif;
@@ -45,14 +45,22 @@ input {
    background-color:#EDFEFF;
    font-size: 20px;
    display: flex;
-   justify-content: center;
-   
+   justify-content: center; 
 }
 
 #submitButton:hover {
    background-color: #CDCDCD;
 }
 
+
+
+@keyframes phase{
+100%{background-color: #88BBD6}
+75%{background-color: #99D3DF}
+50%{background-color: #89E9E9}
+25%{background-color: #99D3DF}
+0%{background-color: #88BBD6}
+}
 
 
 

@@ -19,7 +19,8 @@ body {
     background-color: rgba(255, 255, 255, 0.473);
     padding: 15px;
     border-radius: 25px;
-    height: 50%;
+    height: 50vh;
+    width: 85vh;
 }
 
 label{
@@ -29,7 +30,6 @@ label{
 
 input {
    font-size: 30px;
-   width: 50vh;
 }
 
 .inputContainer{

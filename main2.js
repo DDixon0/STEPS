@@ -27,7 +27,8 @@ btnSignUp.addEventListener("click", e => {
 
 	e.preventDefault();
 
-	const credentials = getCredentials()
+	const credentials = getCredentials();
+	const isMentor = credentials.isMentor;
 	const name = credentials.name;
 	const email = credentials.email;
 	const password = credentials.password;
@@ -35,7 +36,7 @@ btnSignUp.addEventListener("click", e => {
 	firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
 		console.log('success');
 		const userId = firebase.auth().currentUser.uid;
-		writeUserData(userId, name);
+		writeUserData(userId, name, isMentor);
 	}).catch(function(error) {
 	  // Handle Errors here.
 	  var errorCode = error.code;
@@ -45,8 +46,9 @@ btnSignUp.addEventListener("click", e => {
 	});
 });
 
-function writeUserData(userId, name) {
+function writeUserData(userId, name, isMentor) {
   firebase.database().ref('users/' + userId).set({
+  	isMentor: isMentor,
     name: name
   });
 }

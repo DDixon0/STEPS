@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    background-image:url();
+    background-size: cover;
+ }
+ 
+ 
+ 
+ h1 {
+    font-size: 30px;
+    text-align: center;
+ }
+ 
+ .userContainer {
+     background: #89E9E9;
+     padding: 15px;
+     border-radius: 25px;
+  
+ }
+ 
+ label {
+    font-size: 25px;
+ 
+ }
+ 
+ input {
+    font-size: 30px;
+ }
+ 
+ .singleInput {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+ 
+ 
+ } 
+ 
+ #submitButton {
+    text-align: center;
+    margin-top: 10px;
+    background-color:#EDFEFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    
+ }
+ 
+ #submitButton:hover {
+    background-color: #CDCDCD;
+ }

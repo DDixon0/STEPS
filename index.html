@@ -1,7 +1,4 @@
-<!-- <<<<<<< HEAD
-======= -->
 
-<!-- >>>>>>> ec31c64f56cb9fa1d7d8663c3a898fbcd71700ee -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +8,8 @@
   <title></title>
   <link rel="stylesheet" href="styles/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200i" rel="stylesheet">
-
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="styles/js/main.js" defer></script>
 </head>
 <body>
   <div class="userContainer">
@@ -21,13 +19,29 @@
                   <label for="username">Email:</label>
                   <input id="txtemail" type="text">
                   <label for="message">Password:</label>
-                  <input id="txtpassword " type="text">
+                  <input id="txtpassword" type="text">
               </div>
-          <button id="submitButton">Sign In</button>
+          <button id="btnLogin">Log In</button>
+          <button id="btnSignUp">Sign Up</button>
+          <button id="btnLogout" class="hide">Log out</button>
       </form>
   </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+    authDomain: "steps-fe8a4.firebaseapp.com",
+    databaseURL: "https://steps-fe8a4.firebaseio.com",
+    projectId: "steps-fe8a4",
+    storageBucket: "steps-fe8a4.appspot.com",
+    messagingSenderId: "198116484586"
+  };
+  firebase.initializeApp(config);
+</script>
   <!-- <div id= "Chase">
       <button id="submitButton1">I Forgot my Username or Password</button>
   </div> -->
 </body>
-</html>
+</html>    

@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
   <link rel="stylesheet" href="styles/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200i" rel="stylesheet">
   <title>STEPS</title>
   <link rel="shortcut icon" href="assets/images/LogoMakr_29kBgqC.png" type="image/x-icon">
-  <script src="styles/js/main.js" defer></script>
+  <!-- <script src="styles/js/main.js" defer></script> -->
 </head>
 <body>
   <div class="userContainer">
@@ -23,25 +22,29 @@
             <input id="txtemail" type="text">
             <label for="message">Password:</label>
             <input id="txtpassword " type="text">
-          <button id="submitButton">Sign In</button>
+            
+          <button id="submitButton" >Sign in</button>
+          <button id="signUpButton">
+              <a href="index2.html">Don't have an account?</a>
+            </button>
       </form>
   </div>
 
-<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
-    authDomain: "steps-fe8a4.firebaseapp.com",
-    databaseURL: "https://steps-fe8a4.firebaseio.com",
-    projectId: "steps-fe8a4",
-    storageBucket: "steps-fe8a4.appspot.com",
-    messagingSenderId: "198116484586"
-  };
-  firebase.initializeApp(config);
-</script>
-  <!-- <div id= "Chase">
-      <button id="submitButton1">I Forgot my Username or Password</button>
-  </div> -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+        authDomain: "steps-fe8a4.firebaseapp.com",
+        databaseURL: "https://steps-fe8a4.firebaseio.com",
+        projectId: "steps-fe8a4",
+        storageBucket: "steps-fe8a4.appspot.com",
+        messagingSenderId: "198116484586"
+    };
+        firebase.initializeApp(config);
+    </script>
+<!-- <div id= "Chase">
+    <button id="submitButton1">I Forgot my Username or Password</button>
+</div> -->
 </body>
 </html>    

@@ -3,28 +3,31 @@ const btnLogout = document.getElementById("btnLogout");
 
 function getCredentials() {
 	const mentor = document.getElementById("mentor");
-	const txtname = document.getElementById("txtfullname");
+	const txtfirstname = document.getElementById("txtfirstname");
+	const txtlastname = document.getElementById("txtlastname");
 	const txtemail = document.getElementById("txtemail");
 	const txtpassword = document.getElementById("txtpassword");
 	const vtfypassword = document.getElementById("vtfypassword");
-	const name = txtname.value;
+	const firstname = txtfirstname.value;
+	const lastname = txtlastname.value;
 	const email = txtemail.value;
 	const pass = txtpassword.value;
 	const vtfypass = vtfypassword.value;
 	
-	txtname.value = '';
+	txtfirstname.value = '';
+	txtlastname.value = '';
 	txtemail.value = '';
 	txtpassword.value = '';
 	vtfypassword.value = '';
 
 	return {
 		isMentor: mentor.checked,
-		name: name,
+		firstname: firstname,
+		lastname: lastname,
 		email: email,
 		password: pass,
-		vtfypassword: vtfypass,
+		vtfypassword: vtfypass
 	}
-
 }
 
 btnSignUp.addEventListener("click", e => {
@@ -33,7 +36,8 @@ btnSignUp.addEventListener("click", e => {
 
 	const credentials = getCredentials();
 	const isMentor = credentials.isMentor;
-	const name = credentials.name;
+	const firstname = credentials.firstname;
+	const lastname = credentials.lastname;
 	const email = credentials.email;
 	const password = credentials.password;
 	const vtfypassword = credentials.vtfypassword;
@@ -42,12 +46,12 @@ btnSignUp.addEventListener("click", e => {
 		firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
 			console.log('success');
 			const userId = firebase.auth().currentUser.uid;
-			writeUserData(userId, name, isMentor);
+			writeUserData(userId, firstname, lastname, isMentor);
 		}).catch(function(error) {
 		  // Handle Errors here.
 		  var errorCode = error.code;
 		  var errorMessage = error.message;
-		  console.log(errorMessage);
+		  alert(errorMessage);
 		  // ...
 		});
 	}else {
@@ -56,10 +60,11 @@ btnSignUp.addEventListener("click", e => {
 	
 });
 
-function writeUserData(userId, name, isMentor) {
+function writeUserData(userId, firstname, lastname, isMentor) {
   firebase.database().ref('users/' + userId).set({
   	isMentor: isMentor,
-    name: name
+    firstname: firstname,
+    lastname: lastname
   });
 }
 

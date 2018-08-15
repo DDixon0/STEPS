@@ -17,10 +17,11 @@ body {
      
  }
  
-  .userContainer {
-     background-color: rgba(255, 255, 255, 0.473);
-     padding: 15px;
-     border-radius: 25px;
+#userContainer {
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 15px;
+    border-radius: 25px;
+    width: 60vw;
  } 
  
  label{
@@ -32,6 +33,15 @@ body {
  
  input {
     font-size: 50px;
+ }
+
+ .txtIn{
+    height: 5vh;
+    width: 90%;
+ }
+ .passes{
+    height: 5vh;
+    width: 90%;
  }
  
  .inputContainer{

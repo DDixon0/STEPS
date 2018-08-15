@@ -6,50 +6,53 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>STEPS</title>
   <link rel="stylesheet" href="styles/css/main2.css">
+  <link rel="shortcut icon" href="assets/images/LogoMakr_29kBgqC.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200i" rel="stylesheet">
   <script src="styles/js/main2.js" defer></script>
 
 </head>
 <body>
-  <div class="userContainer">
-      <form>
-              <div class="singleInput">
-                  <h1>Sign Up</h1>
-                  <label id="name">First Name:</label>
-                  <input id="txtfirstname" type="text">
-                  <label id="name"> Last Name:</label>
-                  <input type="text" id="txtlastname">
-                  <label for="username">Email:</label>
-                  <input id="txtemail" type="text">
-                  <label for="message">Password:</label>
-                  <input class="passes"id="txtpassword" type="password">
-                  <label for="message1">Confirm password:</label>
-                  <input class="passes" id="vtfypassword" type="password">
-                  <br>
-                  <input id="show" type="checkbox" onclick="showPass()">Show Password
-              </div>
-      </form>
-      <br>
-      <form>
+  <div id="userContainer">
+    <form>
+        <div class="singleInput">
+            <h1>Sign Up</h1>
+            <label id="name">First Name:</label>
+            <input id="txtfirstname" type="text" class="txtIn">                  
+            <label id="name"> Last Name:</label>
+            <input type="text" id="txtlastname"class="txtIn">
+            <label for="username">Email:</label>
+            <input id="txtemail" type="text"class="txtIn">
+            <label for="message">Password:</label>
+            <input class="passes"id="txtpassword" type="password">
+            <label for="message1">Confirm password:</label>
+            <input class="passes" id="vtfypassword" type="password" >
+            <br>
+            <input id="show" type="checkbox" onclick="showPass()">Show Password
+        </div>
+    </form>
 
-  <input id="mentor" type="radio" name="role" value="mentor" required> Mentor<br>
-  <input id="mentee" type="radio" name="role" value="mentee"> Mentee<br>
-</form>
-      <button id="submitButton"><a href="index.html">Create Account</a></button>
-  </div>
+    <br>
 
-	<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
-	    authDomain: "steps-fe8a4.firebaseapp.com",
-	    databaseURL: "https://steps-fe8a4.firebaseio.com",
-	    projectId: "steps-fe8a4",
-	    storageBucket: "steps-fe8a4.appspot.com",
-	    messagingSenderId: "198116484586"
-	  };
-	  firebase.initializeApp(config);
-	</script>
+    <form>
+        <input id="mentor" type="radio" name="role" value="mentor" required> Mentor<br>
+        <input id="mentee" type="radio" name="role" value="mentee"> Mentee<br>
+    </form>
+
+    <button id="submitButton"><a href="index.html">Create Account</a></button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+    authDomain: "steps-fe8a4.firebaseapp.com",
+    databaseURL: "https://steps-fe8a4.firebaseio.com",
+    projectId: "steps-fe8a4",
+	storageBucket: "steps-fe8a4.appspot.com",
+	messagingSenderId: "198116484586"
+	};
+	firebase.initializeApp(config);
+</script>
 </body>
 </html>

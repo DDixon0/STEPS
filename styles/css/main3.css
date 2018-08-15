@@ -29,3 +29,71 @@ li a:hover:not(.active) {
 .active {
     background-color: royalblue;
 }
+/* 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: phase 10s infinite;
+    margin-top: 10vh;
+ 
+ } */
+ 
+ 
+ 
+ 
+ /* #headerContent{
+     display: flex;
+     justify-content: center;
+     padding-bottom: 10px;
+ } */
+/*  
+ .userContainer {
+     background-color: rgba(255, 255, 255, 0.473);
+     padding: 15px;
+     border-radius: 25px;
+     width: 75vw;
+ } */
+ 
+ label{
+    font-size: 25px;
+    display: flex;
+    
+ 
+ }
+ 
+ input {
+    font-size: 20px;
+ }
+ 
+ /* .inputContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+ 
+ 
+ }  */
+ 
+ /* button {
+    text-align: center;
+    margin-top: 10px;
+    background-color:#EDFEFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; 
+ } */
+ 
+ /* button:hover {
+    background-color: #CDCDCD;
+ } */
+ 
+ 
+ 
+ @keyframes phase{
+ 100%{background-color: #88BBD6}
+ 75%{background-color: #99D3DF}
+ 50%{background-color: #89E9E9}
+ 25%{background-color: #99D3DF}
+ 0%{background-color: #88BBD6}
+ }

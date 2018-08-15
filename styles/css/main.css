@@ -1,9 +1,11 @@
 body {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    animation: phase 10s infinite;
-   margin-top: 25vh;
+   margin-top: 10vh;
+
 }
 
 
@@ -19,7 +21,7 @@ body {
     background-color: rgba(255, 255, 255, 0.473);
     padding: 15px;
     border-radius: 25px;
-    height: 50%;
+    width: 75vw;
 }
 
 label{
@@ -29,7 +31,6 @@ label{
 
 input {
    font-size: 30px;
-   width: 100%;
 }
 
 .inputContainer{

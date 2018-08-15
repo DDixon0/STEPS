@@ -26,13 +26,15 @@ btnLogin.addEventListener("click", e => {
 	const password = credentials.password;
 
 	firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-		console.log('success');
+
+		alert('success');
+		window.location.assign("index3.html");
 	}).catch(function(error) {
 		// Handle Errors here.
 		var errorCode = error.code;
 		var errorMessage = error.message;
 		// ...
-		console.log(errorMessage);
+		alert(errorMessage);
 	});
 });
 

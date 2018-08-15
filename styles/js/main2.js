@@ -44,7 +44,7 @@ btnSignUp.addEventListener("click", e => {
 	
 	if (password === vtfypassword){
 		firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
-			console.log('success');
+			alert('success');
 			const userId = firebase.auth().currentUser.uid;
 			writeUserData(userId, firstname, lastname, isMentor);
 		}).catch(function(error) {
@@ -65,6 +65,8 @@ function writeUserData(userId, firstname, lastname, isMentor) {
   	isMentor: isMentor,
     firstname: firstname,
     lastname: lastname
+  }).then(function() {
+	window.location.assign("index.html");
   });
 }
 

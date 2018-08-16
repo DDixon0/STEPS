@@ -59,8 +59,7 @@ body {
  label{
     font-size: 25px;
     display: flex;
-    
- 
+    float: inherit;
  }
  
  input {

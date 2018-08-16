@@ -177,9 +177,79 @@ body {
     opacity: 0;
 }
 
+.show{
+    animation: high 5s;
+    opacity: 1;
+}
 
 
- @keyframes low{
+
+
+@keyframes low{
      from{opacity: 1;}
      to{opacity: 0;}
- }
+}
+
+@keyframes high{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+
+
+
+
+/*  The mentors */
+
+
+.user{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 10px;
+    background-color: bisque;
+    border: 10px solid salmon;
+}
+
+.pass{
+    animation: pass 2s;
+}
+
+
+.fail{
+    animation: fail 2s;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sort{
+    
+}
+.nothing{
+    opacity: 0;
+}
+
+
+
+
+@keyframes pass{
+    from{opacity: 1;}
+    from{background-color: bisque;}
+    to{background-color: greenyellow;}
+    to{opacity: 0;}
+}
+
+
+
+@keyframes fail{
+    from{opacity: 1;}
+    from{background-color: bisque;}
+    to{opacity: 0;}
+    to{background-color: red;}
+
+}

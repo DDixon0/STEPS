@@ -52,6 +52,7 @@ body {
  .userContainer {
      display: flex;
      justify-content: center;
+     
  } 
  
  label{
@@ -66,6 +67,7 @@ body {
 
  input {
     font-size: 20px;
+    max-width: 80vw;
  }
 
  #mf{
@@ -84,7 +86,7 @@ body {
 
  #work{
     font-family: 'Lato', sans-serif;
-    border-color:
+    border-color: black;
  }
 
  #hours{
@@ -157,26 +159,7 @@ body {
  }
  
 
- /* .inputContainer{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Nunito Sans', sans-serif;
  
- 
- }  */
- 
- /* button {
-    text-align: center;
-    margin-top: 10px;
-    background-color:#EDFEFF;
-    font-size: 20px;
-    display: flex;
-    justify-content: center; 
- } */
- 
- /* button:hover {
-    background-color: #CDCDCD;
- } */
  
  
  
@@ -186,4 +169,17 @@ body {
  50%{background-color: #89E9E9}
  25%{background-color: #99D3DF}
  0%{background-color: #88BBD6}
+ }
+
+
+.hide{
+    animation: low 5s;
+    opacity: 0;
+}
+
+
+
+ @keyframes low{
+     from{opacity: 1;}
+     to{opacity: 0;}
  }

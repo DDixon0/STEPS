@@ -22,59 +22,49 @@
         <li style="float:right"><a class="active" href="#profile">Profile</a></li>
         </ul>
 
-        <div class="userContainer">
-                <form>
-                        <div class="singleInput">
-                            <p id="notready"></p>
-                            <label  id="work">Where do you Work:</label>
-                            <input id="txtwork" type="text">
-                            <label  id="hours">What hours are you available?</label>
-                            <input type="text" id="txtavailability">
+    <div class="userContainer">
+        <form>
+            <div class="singleInput">
+                <p id="notready"></p>
+                <label  id="work">Where do you Work:</label>
+                <input id="txtwork" type="text">
+                <label  id="hours">What hours are you available?</label>
+                <input type="text" id="txtavailability">
 
-                            
-                            <br>
-                            
+                
+                <br>
+                
 
-                            <label  for="username">Why do you want to be a Mentor?</label>
-                            <textarea class="whyMentor" rows="4" cols="50"></textarea>
-                            <br>
-                            <label id="hours">Can you list four intrests?</label>
-                            <input type="text" class="txtintrest">
-                            <input type="text" class="txtintrest">
-                            <input type="text" class="txtintrest">
-                            <input type="text" class="txtintrest">
-
-
-                            
-                              
-                            </div>   
-
-                             <button id="btnNext"><span>Finish</span></button>
-
-                           
+                <label  for="username">Why do you want to be a Mentor?</label>
+                <textarea class="whyMentor" rows="4" cols="50"></textarea>
+                <br>
+                <label id="hours">Can you list four intrests?</label>
+                <input type="text" class="txtintrest">
+                <input type="text" class="txtintrest">
+                <input type="text" class="txtintrest">
+                <input type="text" class="txtintrest">
 
 
-            </div>
+                
+                    
+                </div>   
 
-               
+                    <button id="btnNext"><span>Finish</span></button>
 
-
-                </form>
         
-
-                  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-                    <script>
-                    // Initialize Firebase
-                    var config = {
-                        apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
-                        authDomain: "steps-fe8a4.firebaseapp.com",
-                        databaseURL: "https://steps-fe8a4.firebaseio.com",
-                        projectId: "steps-fe8a4",
-                        storageBucket: "steps-fe8a4.appspot.com",
-                        messagingSenderId: "198116484586"
-                    };
-                    firebase.initializeApp(config);
-                    </script>
+        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+            authDomain: "steps-fe8a4.firebaseapp.com",
+            databaseURL: "https://steps-fe8a4.firebaseio.com",
+            projectId: "steps-fe8a4",
+            storageBucket: "steps-fe8a4.appspot.com",
+            messagingSenderId: "198116484586"
+        };
+        firebase.initializeApp(config);
+        </script>
 
 
         

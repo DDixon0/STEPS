@@ -1,7 +1,17 @@
 
 const database = firebase.database();
+const next = document.getElementById("btnNext");
 
+next.addEventListener("click", e => {
 
+	e.preventDefault();
+	console.log("Does it work");
+	const forum = document.getElementsByClassName("userContainer")[0];
+	console.log(forum);
+	forum.classList.add("hide");
+	
+
+});
 //When you log in
 
 firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -30,3 +40,4 @@ function getName(uid){
 	})
 	
 };
+

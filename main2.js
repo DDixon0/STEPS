@@ -13,7 +13,7 @@ function getCredentials() {
 	const email = txtemail.value;
 	const pass = txtpassword.value;
 	const vtfypass = vtfypassword.value;
-	
+		
 	txtfirstname.value = '';
 	txtlastname.value = '';
 	txtemail.value = '';
@@ -44,7 +44,7 @@ btnSignUp.addEventListener("click", e => {
 	
 	if (password === vtfypassword){
 		firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
-			alert('success');
+			console.log('success');
 			const userId = firebase.auth().currentUser.uid;
 			writeUserData(userId, firstname, lastname, isMentor);
 		}).catch(function(error) {
@@ -65,13 +65,6 @@ function writeUserData(userId, firstname, lastname, isMentor) {
   	isMentor: isMentor,
     firstname: firstname,
     lastname: lastname
-  }, function(error) {
-	  if (error) {
-		  console.log(error);
-	  } else {
-		window.location.assign("index.html");
-	  }
-	  
   });
 }
 

@@ -208,8 +208,8 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     margin: 10px;
-    background-color: bisque;
-    border: 10px solid salmon;
+    background-color: #c4e4ff;
+    border: 10px solid #4b73df;
 }
 
 .pass{
@@ -228,7 +228,7 @@ body {
 
 
 .sort{
-    
+
 }
 .nothing{
     opacity: 0;

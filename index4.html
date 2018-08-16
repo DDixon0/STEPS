@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main4.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="styles/js/main4.js" defer></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
@@ -32,18 +33,16 @@
                 <div class="userContainer">
                         <form>
                                 <div class="singleInput">
-                                    <h1>Mentee</h1>
-                                    <label id="work">What school do you go to?</label>
-                                    <input id="txtwork" type="text">
-                                    <label id="hours">What are your interests?</label>
-                                    <input type="text" id="txtavailability">
-                                    <label for="username">What do you hope to learn from your Mentor?</label>
-                                    <textarea rows="4" cols="50"></textarea>
+                                    <p id="notready"></p>
+                                    <label id="School">What school do you go to?</label>
+                                    <input id="txtSchool" type="text">
+                                    <label id="Interests">What are your interests?</label>
+                                    <input type="text" id="txtinterests">
+                                    <label id="mentorLearn" for="username">What do you hope to learn from your Mentor?</label>
+                                    <textarea id="txtarea" rows="4" cols="50"></textarea>
+
                                     <br>
-                                <h2>Are you a Male or Female</h2>
-                                    <input id="show" type="checkbox" onclick="showPass()">Male
-                                    <input id="show" type="checkbox" onclick="showPass()">female
-                                </div>
+                               <button id="btnNext"> <span>Finish</span></button>
                         </form>
                         <br>
                         <form>

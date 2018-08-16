@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-const
-=======
 let currentUser;
 
 
@@ -14,4 +11,3 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
         console.log("Not logged in. or not working");
     }
 });
->>>>>>> 51bc765356c2d8244125a9bc380b59530f84fe18

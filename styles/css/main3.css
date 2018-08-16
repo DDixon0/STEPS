@@ -48,13 +48,11 @@ body {
      justify-content: center;
      padding-bottom: 10px;
  } */
-/*  
+  
  .userContainer {
-     background-color: rgba(255, 255, 255, 0.473);
-     padding: 15px;
-     border-radius: 25px;
-     width: 75vw;
- } */
+     display: flex;
+     justify-content: center;
+ } 
  
  label{
     font-size: 25px;
@@ -86,6 +84,7 @@ body {
 
  #work{
     font-family: 'Lato', sans-serif;
+    border-color:
  }
 
  #hours{
@@ -94,7 +93,70 @@ body {
 
  #btnNext{
     margin-top: 2%;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: CornflowerBlue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 12px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
  }
+
+ #btnNext span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+
+ #btnNext span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btnNext:hover span {
+  padding-right: 25px;
+}
+
+#btnNext:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+ .txtintrest{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    border-color: black;
+ }
+
+ .txtboxes{
+    border-color: black;
+ }
+
+ #txtwork{
+    border-color: black;
+ }
+
+ #txtavailability{
+    border-color: black;
+ }
+
+ .whyMentor{
+    border-color: black;
+    border-width: 2.2px;
+ }
+ 
+
  /* .inputContainer{
     display: flex;
     flex-direction: column;

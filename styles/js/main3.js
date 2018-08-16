@@ -1,17 +1,33 @@
-<<<<<<< HEAD
-const
-=======
-let currentUser;
 
+const database = firebase.database();
 
 
 //When you log in
+
 firebase.auth().onAuthStateChanged(firebaseUser => {
 	if(firebaseUser){
-        console.log(firebaseUser);
-    }
-    else{
+        getName(firebaseUser.uid);
+    } else{
         console.log("Not logged in. or not working");
     }
 });
->>>>>>> 51bc765356c2d8244125a9bc380b59530f84fe18
+
+// .then(function(response){
+// 	firstname();
+// });
+
+
+
+function getName(uid){
+	database.ref('users/' + uid).once('value').then(function(snapshot) {
+		if(snapshot.exists()){
+			const ready = document.getElementById("notready");
+			const name = snapshot.val()['lastname'];
+			ready.innerText = "Not just ready yet..." + name;
+		} else{
+			console.log("NO name");
+		}
+	})
+	
+};
+

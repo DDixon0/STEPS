@@ -9,11 +9,11 @@
     <title>STEPS</title>
     <link rel="stylesheet" href="styles/css/main3.css">
     <link rel="shortcut icon" href="assets/images/LogoMakr_29kBgqC.png" type="image/x-icon">
-<<<<<<< HEAD
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-=======
+
     <script src="styles/js/main3.js" defer></script>
->>>>>>> 51bc765356c2d8244125a9bc380b59530f84fe18
+
 </head>
 <body>
     <ul>
@@ -24,37 +24,40 @@
         <div class="userContainer">
                 <form>
                         <div class="singleInput">
-                            <p id="notready">Not ready just yet...</p>
-                            <label id="work">Where do you Work:</label>
+                            <p id="notready"></p>
+                            <label  id="work">Where do you Work:</label>
                             <input id="txtwork" type="text">
-                            <label id="hours">What hours are you available?</label>
+                            <label  id="hours">What hours are you available?</label>
                             <input type="text" id="txtavailability">
 
                             
                             <br>
                             
 
-                            <label id="whyMentor" for="username">Why do you want to be a Mentor?</label>
-                            <textarea rows="4" cols="50"></textarea>
+                            <label  for="username">Why do you want to be a Mentor?</label>
+                            <textarea class="whyMentor" rows="4" cols="50"></textarea>
                             <br>
-                            <p id="mf">Are you a Male or Female?</p>
-                            <div id="genderf">
-                            <input type="radio" id="Male"name="Gender" value="Male"> <label for="Gender">Male</label>
-                            <input type="radio" id="Female" name="Gender" value="Female"> <label for="Gender">Female</label>
-                            <br>
+                            <label id="hours">Can you list four intrests?</label>
+                            <input type="text" class="txtintrest">
+                            <input type="text" class="txtintrest">
+                            <input type="text" class="txtintrest">
+                            <input type="text" class="txtintrest">
+
+
+                            
                               
                             </div>   
 
-                             <button id="btnNext">Finish</button>
+                             <button id="btnNext"><span>Finish</span></button>
 
                            
 
-                        </div>
-<<<<<<< HEAD
+            </div>
+
                
-=======
+
                 </form>
-        </div>   
+        
 
                   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
                     <script>
@@ -69,7 +72,6 @@
                     };
                     firebase.initializeApp(config);
                     </script>
->>>>>>> 51bc765356c2d8244125a9bc380b59530f84fe18
 
 
         

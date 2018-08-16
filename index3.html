@@ -33,8 +33,6 @@
 
                 
                 <br>
-                
-
                 <label  for="username">Why do you want to be a Mentor?</label>
                 <textarea class="whyMentor" rows="4" cols="50"></textarea>
                 <br>
@@ -44,15 +42,22 @@
                 <input type="text" class="txtintrest">
                 <input type="text" class="txtintrest">
 
+            
+            </div>
+            </form>
+    </div> 
 
-                
-                    
-                </div>   
+         <button id="btnNext"><span>Finish</span></button>
 
-                    <button id="btnNext"><span>Finish</span></button>
+    <div class = "nothing">
+    <div id="header">
+            <button type="button" class="sort" onclick="gSort()"> Sort Gender</button>
+            <button type="button" class="sort" onclick="fNameSort()"> Sort First Name</button>
+            <button type="button" class="sort" onclick="lNameSort()"> Sort Last Name</button>
+    </div>
+    </div>
 
-        
-        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
         <script>
         // Initialize Firebase
         var config = {
@@ -64,7 +69,7 @@
             messagingSenderId: "198116484586"
         };
         firebase.initializeApp(config);
-        </script>
+    </script>
 
 
         

@@ -32,8 +32,8 @@ function getName(uid){
 	database.ref('users/' + uid).once('value').then(function(snapshot) {
 		if(snapshot.exists()){
 			const ready = document.getElementById("notready");
-			const name = snapshot.val()['lastname'];
-			ready.innerText = "Not just ready yet..." + name;
+			const name = snapshot.val()['firstname'];
+			ready.innerText = "Not ready just yet" + " " + name + "...." ;
 		} else{
 			console.log("NO name");
 		}

@@ -39,7 +39,7 @@ function getName(uid){
 		if(snapshot.exists()){
 			const ready = document.getElementById("notready");
 			const name = snapshot.val()['firstname'];
-			ready.innerText = "Not just ready yet..." + name;
+			ready.innerText = "Not ready just yet" + " " + name +"....";
 		} else{
 			console.log("NO name");
 		}

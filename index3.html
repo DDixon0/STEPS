@@ -9,6 +9,7 @@
     <title>STEPS</title>
     <link rel="stylesheet" href="styles/css/main3.css">
     <link rel="shortcut icon" href="assets/images/LogoMakr_29kBgqC.png" type="image/x-icon">
+    <script src="styles/js/main3.js" defer></script>
 </head>
 <body>
     <ul>
@@ -31,8 +32,21 @@
                             <input id="show" type="checkbox" onclick="showPass()">female
                         </div>
                 </form>
-                <br>
-                <form>
+        </div>   
+
+                  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+                    <script>
+                    // Initialize Firebase
+                    var config = {
+                        apiKey: "AIzaSyBLHajbXQ026uhexu7kSz5Jtu50rNJKVfw",
+                        authDomain: "steps-fe8a4.firebaseapp.com",
+                        databaseURL: "https://steps-fe8a4.firebaseio.com",
+                        projectId: "steps-fe8a4",
+                        storageBucket: "steps-fe8a4.appspot.com",
+                        messagingSenderId: "198116484586"
+                    };
+                    firebase.initializeApp(config);
+                    </script>
 
 
         

@@ -69,7 +69,6 @@ function writeUserData(userId, firstname, lastname, isMentor) {
 	  if (error) {
 		  console.log(error);
 	  } else {
-		console.log('hi');
 		window.location.assign("index.html");
 	  }
 	  

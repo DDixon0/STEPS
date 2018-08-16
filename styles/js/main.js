@@ -26,7 +26,7 @@ btnLogin.addEventListener("click", e => {
 	const password = credentials.password;
 
 	firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-		alert('success');
+		alert('You have Logged in. Close the tab to start a new session.');
 	
 	}).catch(function(error) {
 		// Handle Errors here.
@@ -63,7 +63,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 		firebase.database().ref(path).once('value').then(function(isMentorSnapshot) {
 			const isMentor = isMentorSnapshot.val();
 			if(isMentor){
-				alert(isMentor);
+
 				window.location.assign("index3.html");
 			}
 			else{

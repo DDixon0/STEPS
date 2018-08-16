@@ -1,91 +1,58 @@
-body{
-    background-color: #99D3DF;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: royalblue;
-}
-/* 
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 50%;
     animation: phase 10s infinite;
-    margin-top: 10vh;
- 
- } */
+ }
  
  
  
  
- /* #headerContent{
+ #headerContent{
      display: flex;
      justify-content: center;
      padding-bottom: 10px;
- } */
-/*  
- .userContainer {
+     
+ }
+ 
+  .userContainer {
      background-color: rgba(255, 255, 255, 0.473);
      padding: 15px;
      border-radius: 25px;
-     width: 75vw;
- } */
+ } 
  
  label{
     font-size: 25px;
     display: flex;
-    float: inherit;
+    justify-content: flex-start;
+
  }
  
  input {
-    font-size: 20px;
+    font-size: 50px;
  }
  
- /* .inputContainer{
+ .inputContainer{
     display: flex;
     flex-direction: column;
     font-family: 'Nunito Sans', sans-serif;
+ } 
  
- 
- }  */
- 
- /* button {
+ #submitButton {
     text-align: center;
     margin-top: 10px;
     background-color:#EDFEFF;
     font-size: 20px;
     display: flex;
     justify-content: center; 
- } */
+    
+ }
  
- /* button:hover {
+ #submitButton:hover {
     background-color: #CDCDCD;
- } */
+ }
  
  
  
@@ -96,3 +63,5 @@ body {
  25%{background-color: #99D3DF}
  0%{background-color: #88BBD6}
  }
+
+ 

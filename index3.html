@@ -9,6 +9,7 @@
     <title>STEPS</title>
     <link rel="stylesheet" href="styles/css/main3.css">
     <link rel="shortcut icon" href="assets/images/LogoMakr_29kBgqC.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
     <ul>
@@ -19,18 +20,31 @@
         <div class="userContainer">
                 <form>
                         <div class="singleInput">
-                            <h1>Mentor</h1>
+                            <p id="notready">Not ready just yet...</p>
                             <label id="work">Where do you Work:</label>
                             <input id="txtwork" type="text">
                             <label id="hours">What hours are you available?</label>
                             <input type="text" id="txtavailability">
-                            <label for="username">Why do you want to be a Mentor or a Mentee?</label>
-                            <input id="txtwhy" type="text">
+
+                            
                             <br>
+                            
+
+                            <label id="whyMentor" for="username">Why do you want to be a Mentor?</label>
+                            <textarea rows="4" cols="50"></textarea>
+                            <br>
+                            <p id="mf">Are you a Male or Female?</p>
                             <div id="genderf">
                             <input type="radio" id="Male"name="Gender" value="Male"> <label for="Gender">Male</label>
                             <input type="radio" id="Female" name="Gender" value="Female"> <label for="Gender">Female</label>
-                            </div>     
+                            <br>
+                              
+                            </div>   
+
+                             <button id="btnNext">Finish</button>
+
+                           
+
                         </div>
                
 

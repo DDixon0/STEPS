@@ -59,8 +59,7 @@ body {
  label{
     font-size: 25px;
     display: flex;
-    
- 
+    float: inherit;
  }
  
  #genderf{
@@ -70,7 +69,32 @@ body {
  input {
     font-size: 20px;
  }
- 
+
+ #mf{
+    font-family: 'Lato', sans-serif;
+ }
+
+ #notready{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+ }
+
+ #whyMentor{
+    font-family: 'Lato', sans-serif;
+ }
+
+ #work{
+    font-family: 'Lato', sans-serif;
+ }
+
+ #hours{
+    font-family: 'Lato', sans-serif;
+ }
+
+ #btnNext{
+    margin-top: 2%;
+ }
  /* .inputContainer{
     display: flex;
     flex-direction: column;

@@ -106,7 +106,7 @@ for (let i = 0; i < data.results.length; i++){
     //data.results[i].name.first[0] = data.results[i].name.first[0].toUpperCase();
     //console.log(data.results[i].name.first[0].toUpperCase());
     
-    text.innerText = "The user name is " + data.results[i].name.first + " " + data.results[i].name.last + ".";
+    text.innerText =  data.results[i].name.first + " " + data.results[i].name.last;
 
     element.appendChild(pic);
     element.appendChild(text);
@@ -133,7 +133,7 @@ function addDiv(){
     element.id = i;
 
     pic.src = data.results[i].picture.medium;
-    text.innerText = "The user name is " + data.results[i].name.first + " " + data.results[i].name.last + ".";
+    text.innerText =  data.results[i].name.first + " " + data.results[i].name.last ;
 
     element.appendChild(pic);
     element.appendChild(text);
